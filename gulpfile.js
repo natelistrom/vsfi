@@ -10,7 +10,7 @@ var foreach = require("gulp-foreach");
 var concat = require("gulp-concat");
 var svgmin = require("gulp-svgmin");
 var fontName = 'bowtie';
-var svgsourcefolder = 'assets/icons/bowtie/';
+var svgsourcefolder = 'assets/svgs/bowtie/';
 
 //optimize all svg files by trimming whitespaces and empty tags
 //Note: running this task will modify all svg files
@@ -33,6 +33,8 @@ gulp.task('iconfont', function() {
 			fontHeight: 448,
 			descent:    64,
 			fontName: fontName,
+			metadata: "Icon font for VSTS.",
+			version: "v1.1",
 			appendCodepoints: true,
       fontPath: '../fonts/',
 			formats: ['ttf', 'eot', 'woff', 'svg']
