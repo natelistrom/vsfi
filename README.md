@@ -2,6 +2,8 @@
 ### Icon font generator
 Original Bowtie icons (https://github.com/jimlamb/Bowtie) by @jimlamb
 
+Whitespace
+
 ### Prerequisites
 - nodejs 4.1+
 - python 2.7
